@@ -58,4 +58,4 @@ $ ruby unfollow.rb my_username my_password user1 user2
 
 ### License
 
-Licensed by [GNU General Public License v3.0](https://github.com/Davigl/github-unfollower/blob/master/LICENSE).
+Licensed by [GNU General Public License v3.0](https://github.com/Davigl/github-unfollow/blob/master/LICENSE).
