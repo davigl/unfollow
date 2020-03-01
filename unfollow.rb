@@ -16,7 +16,7 @@ class Unfollow
   end
 
   ##
-  # Method that loops through user followed page and unfollow who doesn't
+  # Main method that loops through user following page and unfollow who doesn't
   # follow you back.
 
   def unfollow
