@@ -5,7 +5,7 @@ require 'base64'
 
 module Github
   ##
-  # Unfollow an github user.
+  # Unfollow a github user.
   # Params: credentials:string, target:string
 
   def unfollow_user(credentials, target)
@@ -14,7 +14,7 @@ module Github
     HTTParty.delete(base_uri.to_s, headers: {
                       'Authorization' => ('Basic ' + credentials),
                       'User-Agent' => 'Patassaura'
-                  })
+                    })
 
     puts "unfollowed #{target}"
   end
@@ -42,16 +42,16 @@ module Github
     base_uri = URI("https://api.github.com/users/#{target}/following/#{user}")
 
     response = HTTParty.get(base_uri.to_s, headers: {
-      'User-Agent' => 'Patassaura'
-    }).code
+                              'User-Agent' => 'Patassaura'
+                            }).code
 
     response.eql? 404
   end
 
   ##
   # Method that iterates through followed users and starts to unfollow everyone
-  # who doesn't follow you and it's not inside your white_list.
-  # Params: credentials:string, username:string, json
+  # who doesn't follow you back and it's not inside your white list.
+  # Params: credentials:string, username:string, followed:json, white_list:array
 
   def unfollow_all(credentials, username, followed, white_list)
     followed.each do |user|
