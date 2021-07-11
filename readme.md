@@ -26,7 +26,7 @@ git clone https://github.com/Davigl/github-follow-api.git
 $ ruby -v
 ```
 
-**If you dont have it, install using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):**
+**If you don't have it, install using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):**
 
 ```shell
 $ rbenv install version
@@ -42,7 +42,7 @@ $ gem install httparty
 
 **To run this script you need to insert your github credentials (username, password)**
 
-**Note:** *If you doesn't want to unfollow some specific users, insert they usernames after password separated by space.*
+**Note:** *If you don't want to unfollow some specific users, insert they usernames after password separated by space.*
 
 ```ruby
 $ ruby unfollow.rb <login> <password> <white-list>
