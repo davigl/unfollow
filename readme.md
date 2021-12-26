@@ -17,7 +17,7 @@ Ruby script to unfollow users that doesn't follow you back, your **white list** 
 ###### Clone Repository
 
 ```shell
-git clone https://github.com/Davigl/github-follow-api.git
+git clone https://github.com/Davigl/github-unfollow.git
 ```
 
 ###### Check your Ruby version
